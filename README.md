@@ -21,6 +21,9 @@ GENERATE FIGURES
 •	Select Run if you want to generate all the figures
 o	Note: You can also select to run subsections if you only want to generate certain figures 
 
+REVERSAL TRANSITION SCRIPTS 
+Refer to following link: https://github.com/DartmouthCCNL
+
 RUN GLM ANALYSIS 
 •	Specify the name of the mat file you want to load onto “GLM_AB_STATS” or “GLM_SB_STATS” matlab scripts
 •	Select Run if you want to run all the full model GLMs
