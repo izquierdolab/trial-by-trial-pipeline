@@ -1,5 +1,4 @@
 
-% 6/3: OOP method for restructuring data to hold all relavent data in 1 instance
 % Get and restructure data for analysis
 
 classdef STRUCT_DATA
@@ -200,9 +199,7 @@ classdef STRUCT_DATA
                         day_vars(ind).condphase = vars(rat).condphase;
                         day_vars(ind).prob = vars(rat).prob;
                         day_vars(ind).day = day;
-                        day_vars(ind).trials = num_trials;
-%                         day_vars(ind).control = vars(rat).control;
-%                         day_vars(ind).OFCDREADD_EGFPS = vars(rat).OFCDREADD_EGFPS;                       
+                        day_vars(ind).trials = num_trials;                       
                         day_vars(ind).sex = vars(rat).sex;
                         day_vars(ind).region = vars(rat).region;
                         day_vars(ind).brainregion = vars(rat).brainregion;
@@ -385,16 +382,12 @@ classdef STRUCT_DATA
                 rat_stacked.('sex') = repmat(row_data.sex,height(data),1);
                 rat_stacked.('region') = repmat(row_data.region,height(data),1);
                 rat_stacked.('brainregion') = repmat(row_data.brainregion,height(data),1);
-%                 rat_stacked.('control') = repmat(row_data.control,height(data),1);
-%                 rat_stacked.('OFCDREADD_EGFPS') = repmat(row_data.OFCDREADD_EGFPS,height(data),1);
                 rat_stacked.('virus') = repmat(row_data.virus,height(data),1);
                 rat_stacked.('drug') = repmat(row_data.drug,height(data),1);
                 rat_stacked.('order') = repmat(row_data.order,height(data),1);
                 rat_stacked.('drugorder') = repmat(row_data.drugorder,height(data),1);        
                 rat_stacked.('phase') = repmat(row_data.phase,height(data),1);     
-                
-%                 table_order = ismember(stacked_tbl.Properties.VariableNames,rat_stacked.Properties.VariableNames);
-                
+                              
                 % add rat info to the rest of stacked table
                 stacked_tbl = [stacked_tbl; rat_stacked];
             end
