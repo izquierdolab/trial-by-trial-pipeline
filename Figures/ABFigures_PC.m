@@ -1,7 +1,7 @@
 clear, clc
 close all
 
-losad('ALL_OUT_DATA.mat')
+load('ALL_OUT_DATA.mat')
 
 %%
 %PERCENT CORRECT - AB D5
